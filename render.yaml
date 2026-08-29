@@ -1,0 +1,33 @@
+# Render Deployment Configuration for Lattice
+# Deploy at: https://dashboard.render.com
+
+services:
+  - type: web
+    name: lattice
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_SITE_URL
+        sync: false
+        # Set this to your Render URL after first deploy
+      - key: STRIPE_SECRET_KEY
+        sync: false
+        # Set in Render dashboard
+      - key: STRIPE_PUBLISHABLE_KEY
+        sync: false
+        # Set in Render dashboard
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+        # Set in Render dashboard after creating webhook
+      - key: GMAIL_USER
+        sync: false
+        # Your Gmail address
+      - key: GMAIL_APP_PASSWORD
+        sync: false
+        # Your Gmail app password
+    healthCheckPath: /
+    autoDeploy: true
