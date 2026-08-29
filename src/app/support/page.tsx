@@ -81,7 +81,7 @@ export default function SupportPage() {
 const faqs = [
   { q: 'How do I download my purchase?', a: 'After payment, you will be redirected to a success page with a download link. You will also receive an email with the link. Check your spam folder if you do not see it.' },
   { q: 'What formats are the resume templates?', a: 'The templates are in Markdown format that you can copy into Google Docs, Microsoft Word, or any text editor.' },
-  { q: 'Can I get a refund?', a: 'Yes! We offer a 30-day money-back guarantee. Contact us within 30 days for a full refund — no questions asked.' },
+  { q: 'Can I get a refund?', a: 'All sales are final. Due to the digital nature of our products, once downloaded, they cannot be returned. However, if you experience any issues with your download or need help using the products, our support team is here to help.' },
   { q: 'The download link is not working?', a: 'Check your email for the download link. If it is not working, contact us and we will send a new link immediately.' },
   { q: 'Can I use the prompts with any AI tool?', a: 'Yes! The prompts work with ChatGPT, Claude, Gemini, and any other AI assistant.' },
   { q: 'Is my payment secure?', a: 'Absolutely. All payments are processed through Stripe. We never store your credit card information.' },
