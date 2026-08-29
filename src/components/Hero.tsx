@@ -74,7 +74,7 @@ export default function Hero() {
               {loading ? 'Redirecting...' : 'Get Instant Access — $27'}
             </button>
             <a
-              href="#features"
+              href="/#features"
               className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all duration-200 text-center"
             >
               See What's Inside
